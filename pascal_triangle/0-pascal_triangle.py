@@ -10,7 +10,13 @@ def pascal_triangle(n):
         return triangle
 
     triangle.append([1])
+    if n == 1:
+        return triangle
+
     triangle.append([1, 1])
+    if n == 2:
+        return triangle
+
     idx = 1
     while (n - 2) != 0:
         newList = []

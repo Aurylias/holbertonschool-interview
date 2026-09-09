@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Module for creating pascal tirangle"""
 
 
@@ -28,4 +29,3 @@ def pascal_triangle(n):
         idx += 1
 
     return triangle
-    

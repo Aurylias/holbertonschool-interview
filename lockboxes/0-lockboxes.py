@@ -14,5 +14,5 @@ def canUnlockAll(boxes):
             unlocked.add(currentKey)
             keys.extend(boxes[currentKey])
 
-    return len(unlocked) == n
+    return len(unlocked) == numBoxes
     

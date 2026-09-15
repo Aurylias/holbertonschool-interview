@@ -9,10 +9,9 @@ def canUnlockAll(boxes):
     unlocked = {0}
 
     while keys:
-        currentKey = keys.pop() #return last key in keys
+        currentKey = keys.pop()
         if currentKey < numBoxes and currentKey not in unlocked:
             unlocked.add(currentKey)
             keys.extend(boxes[currentKey])
 
     return len(unlocked) == numBoxes
-    

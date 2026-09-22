@@ -1,3 +1,6 @@
+#!usr/bin/python3
+"""Doc String"""
+
 def minOperations(n):
     """Get to the given value with minimal operation"""
     if n <= 1:

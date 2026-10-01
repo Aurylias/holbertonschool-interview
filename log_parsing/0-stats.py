@@ -2,6 +2,7 @@
 """Log parsing module"""
 import sys
 
+
 def print_stat(total_size, status_counts):
     """Print the stats"""
     print("File size: {total_size}")

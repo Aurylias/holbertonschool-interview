@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """Module for checking if the given data represents a valid UTF-8 encoding"""
 
 def validUTF8(data):

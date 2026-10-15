@@ -2,6 +2,7 @@
 """Solve the N queens problem"""
 import sys
 
+
 def n_not_valid():
     """Check if all passed value are correct"""
     if len(sys.argv) != 2:
@@ -17,6 +18,7 @@ def n_not_valid():
         return True
     return False
 
+
 def is_safe(board, row, col):
     """Check if this position is safe"""
     for queen in board:
@@ -28,6 +30,7 @@ def is_safe(board, row, col):
         if abs(queen_row - row) == abs(queen_col - col):
             return False
     return True
+
 
 def solve(row, n, board):
     """Solve the problem with recursion"""
@@ -41,10 +44,11 @@ def solve(row, n, board):
             solve(row + 1, n, board)
             board.pop()
 
+
 if __name__ == "__main__":
     if n_not_valid():
         exit(1)
-    
+
     N = int(sys.argv[1])
 
     solve(0, N, [])

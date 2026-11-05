@@ -6,12 +6,12 @@ def island_perimeter(grid):
     """Takes a rectangular grid with a width or height maximum of 100. 
        O is water and 1 island. Lakes are not allowed. Return it's perimeter"""
 
-    if not grid:
-        return 0
-
     perimeter = 0
     rows = len(grid)
-    cols = len(grid[0])
+    if rows > 0:
+        cols = len(grid[0])
+    else:
+        cols = 0
 
     for i in range(rows):
         for j in rang(cols):

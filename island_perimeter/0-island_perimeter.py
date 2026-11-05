@@ -3,7 +3,7 @@
 
 
 def island_perimeter(grid):
-    """Takes a rectangular grid with a width or height maximum of 100. 
+    """Takes a rectangular grid with a width or height maximum of 100.
        O is water and 1 island. Lakes are not allowed. Return it's perimeter"""
 
     perimeter = 0

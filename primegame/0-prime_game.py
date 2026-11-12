@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """
-A game where the players take turns and remove a prime number and it's 
+A game where the players take turns and remove a prime number and it's
 multiples from the given set. The player that cannot make a move loses the game
 """
+
 
 def crible_eratosthene(max_n):
     """Use the Ératosthène algorithm to find all prime number in a range"""
@@ -22,7 +23,7 @@ def crible_eratosthene(max_n):
         prime_count[i] = count
 
     return prime_count
-    
+
 
 def isWinner(x, nums):
     """
@@ -56,4 +57,3 @@ def isWinner(x, nums):
         return "Ben"
 
     return None
-

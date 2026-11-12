@@ -1,4 +1,4 @@
-#!/usr/env/python3
+#!/usr/bin/python3
 """
 A game where the players take turns and remove a prime number and it's 
 multiples from the given set. The player that cannot make a move loses the game
